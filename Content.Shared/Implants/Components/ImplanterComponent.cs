@@ -108,6 +108,14 @@ public sealed partial class ImplanterComponent : Component
     public EntProtoId? DeimplantChosen = null;
 
     public bool UiUpdateNeeded;
+
+    // Sunrise-Start
+    /// <summary>
+    /// Can you implant other. False = you can't, true = you can
+    /// </summary>
+    [DataField]
+    public bool OnlySelfImplant = false;
+    // Sunrise-End
 }
 
 [Serializable, NetSerializable]
