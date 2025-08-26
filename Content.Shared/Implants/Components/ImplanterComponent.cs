@@ -111,7 +111,7 @@ public sealed partial class ImplanterComponent : Component
 
     // Sunrise-Start
     /// <summary>
-    /// Can you implant other. False = you can't, true = you can
+    /// Ограничение на внедрение: если true — имplanter можно использовать только на себе (внедрение в других запрещено).
     /// </summary>
     [DataField]
     public bool OnlySelfImplant = false;
